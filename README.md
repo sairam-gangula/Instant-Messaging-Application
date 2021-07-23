@@ -1,5 +1,6 @@
-# Whatsapp-Clone
-UI Clone of whatsapp 
+# Instant Messaging Application
+UI of an Instant Messaging Application
+
 
 Demo video of the app:
 
