@@ -20,19 +20,19 @@ ChatTab({required this.chatModel});
             ListTile(
               leading: CircleAvatar(
                 radius: 25,
-                backgroundColor: Colors.teal[800],
+                backgroundColor: Color.fromRGBO(74, 83, 107,1),
                 child: SvgPicture.asset(chatModel.isGroup?'icons/groups_white_36dp.svg':'icons/person_outline_white_36dp.svg'),
               ),
-              title: Text(chatModel.name , style: TextStyle(fontFamily:"OpenSans" ),),
-              subtitle: Text(chatModel.currentMessage, style: TextStyle(fontFamily:"OpenSans" ),),
+              title: Text(chatModel.name , style: TextStyle(fontFamily:"OpenSans" ,color: Colors.white),),
+              subtitle: Text(chatModel.currentMessage, style: TextStyle(fontFamily:"OpenSans" ,color: Colors.white),),
 
               trailing: Padding(
                 padding: const EdgeInsets.fromLTRB(0,5,8,5),
                 child: Column(
                   children: <Widget>[
-                    Text(chatModel.time),
+                    Text(chatModel.time,style: TextStyle(color: Colors.white),),
                     SizedBox(height:6),
-                    Icon(Icons.done_rounded),
+                    Icon(Icons.done_rounded,color: Colors.white),
                   ],
                 ),
               ),

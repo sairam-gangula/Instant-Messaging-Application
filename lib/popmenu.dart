@@ -4,7 +4,7 @@ class Popmenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PopupMenuButton<String>(
-      color: Colors.teal[800],
+      color: Color.fromRGBO(74, 83, 107,1) ,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
       itemBuilder: (BuildContext context,){
       return [

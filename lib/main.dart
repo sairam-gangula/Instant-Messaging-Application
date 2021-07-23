@@ -29,15 +29,18 @@ class Home extends StatelessWidget {
           length: tabs.length,
           initialIndex: 1,
           child: Scaffold(
-            backgroundColor: Theme.of(context).primaryColor ,
+            backgroundColor: Color.fromRGBO(74, 83, 107,1) ,
             appBar: AppBar(
-              backgroundColor:Colors.teal[900] ,
-              title: Text('WhatsApp', style: TextStyle( fontFamily: 'OpenSans',),),
+              backgroundColor:Color.fromRGBO(	74, 83, 107, 1),
+              title: Text('Chat App', style: TextStyle( fontFamily: 'OpenSans',),),
               actions: <Widget>[
                 IconButton(icon: Icon(Icons.search_outlined), onPressed: (){},),
                 Popmenu(),
               ],
-              bottom: TabBar( tabs: tabs, indicatorColor: Colors.green,),
+              bottom: TabBar( tabs: tabs,indicator: ShapeDecoration(
+                color: Color.fromRGBO(	217, 165, 179, 1),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+              ),),
             elevation: 0,
             ),
             body:TabBarView(

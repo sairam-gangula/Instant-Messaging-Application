@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp_cl/chat/chatmodel.dart';
 
@@ -47,12 +48,15 @@ class _ChatListState extends State<ChatList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.teal[900],
+      backgroundColor: Color.fromRGBO(74, 83, 107,1),
       body: Column(
         children: <Widget>[
           Expanded(
             child: Container(
-                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.only(topLeft: Radius.circular(50),topRight: Radius.circular(50),)),
+                decoration: BoxDecoration(
+                    color: Color.fromRGBO	( 198, 215, 235, 0.5),
+                    borderRadius: BorderRadius.only(topLeft: Radius.circular(50),topRight: Radius.circular(50),)
+                ),
                 padding: EdgeInsets.only(top: 20),
                 child:ListView.builder(
                   itemCount: chats.length,
@@ -65,10 +69,12 @@ class _ChatListState extends State<ChatList> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.teal[900],
+        backgroundColor: Color.fromRGBO(	217, 165, 179, 1) ,
         onPressed: (){},
           child: Icon(Icons.message),
       ),
     );
   }
 }
+
+

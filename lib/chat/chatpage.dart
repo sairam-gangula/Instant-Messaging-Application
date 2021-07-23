@@ -36,7 +36,9 @@ class _ChatPageState extends State<ChatPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor:Color.fromRGBO(74, 83, 107,1),
       appBar: AppBar(
+        backgroundColor: Color.fromRGBO(74, 83, 107,1),
         leadingWidth: 80,
         leading: InkWell(
           onTap: (){
@@ -48,7 +50,7 @@ class _ChatPageState extends State<ChatPage> {
               Icon(Icons.arrow_back),
               SizedBox(width: 5,),
               CircleAvatar( radius: 24,
-                backgroundColor: Colors.teal[800],
+                backgroundColor: Color.fromRGBO	( 198, 215, 235, 1),
                 child: SvgPicture.asset(
                     widget.chatModel.isGroup?'icons/groups_white_36dp.svg':'icons/person_outline_white_36dp.svg'),
               ),
@@ -82,7 +84,7 @@ class _ChatPageState extends State<ChatPage> {
         elevation: 0,
       ),
       body: Container(
-        color: Colors.teal[400],
+        color:Color.fromRGBO	( 198, 215, 235, 0.5),
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         child: WillPopScope(
@@ -138,7 +140,7 @@ class _ChatPageState extends State<ChatPage> {
                           padding: const EdgeInsets.only(bottom: 8,left: 2),
                           child: CircleAvatar(
                             radius:25,
-                            backgroundColor: Colors.teal[700],
+                            backgroundColor: Color.fromRGBO(74, 83, 107,1),
                             foregroundColor: Colors.white,
                             child: IconButton(
                               icon: Icon(Icons.mic,),
